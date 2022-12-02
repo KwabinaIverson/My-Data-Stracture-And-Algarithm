@@ -50,13 +50,6 @@ function toString() {
   return this.dataStore;
 }
 
-// EXERCISE
-const names = new List();
-names.append("Cynthia");
-names.append("Francis");
-names.append("Juliana");
-console.log(names.toString());
-
 function insert(element, after) {
   const insertPos = this.find(after);
   if (insertPos > -1) {
@@ -113,3 +106,16 @@ function moveTo(position) {
 function getElement() {
   return this.dataStore[this.pos];
 }
+
+//      EXERCISES 
+const names = new List();
+names.append("Cynthia");
+names.append("Francis");
+names.append("Juliana");
+names.append("Jennifer");
+names.append("Bryan");
+names.append("Daniel");
+console.table(names.toString());
+const lookedFor = names.contains("Jennifer");
+console.log(names.getElement());
+console.log(lookedFor)
