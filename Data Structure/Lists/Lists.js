@@ -119,3 +119,12 @@ console.table(names.toString());
 const lookedFor = names.contains("Jennifer");
 console.log(names.getElement());
 console.log(lookedFor)
+
+
+function createArr(file) {
+  const arr = read(file).splice("\n");
+  for (let i = 0; i < arr.length; ++1) {
+    arr[i] = arr[i].trim();
+  }
+  return arr;
+}
