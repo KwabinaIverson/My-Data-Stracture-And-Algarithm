@@ -90,8 +90,8 @@ class Node {
 //TESTING
 const list = new LinkedList();
 
-list.append(1)
-list.append(2)
-list.append(3)
-
 list.prepend(43)
+list.append(1)
+list.search(43)
+
+console.table(list)
